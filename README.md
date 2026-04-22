@@ -3,7 +3,7 @@
 > Skill 文件名：`连环漫画.skill`（复制到 Agent / OpenClaw 的 skills 目录即可）  
 > 将长文章转成连环漫画风格图片，自动完成分镜、Prompt、批量生成与交付。
 
-![连环漫画.skill 封面](./assets/jiekou-cover-v2.png)
+![连环漫画.skill 封面](./assets/chikawa-cover-v2.png)
 
 ---
 
