@@ -1,0 +1,69 @@
+# 连环漫画.skill
+
+## 核心能力
+
+将文章内容转化为连环漫画风格图片，自动完成分镜规划、Prompt 编写、API 调用、下载整理与输出说明。
+
+## API 配置（占位符）
+
+- Endpoint: `https://api.jiekou.ai/v3/nano-banana-pro-light-t2i`
+- Auth: `Bearer YOUR_JIEKOU_API_KEY`
+- Size: `16x9`
+- Output: `./outputs/comic/`
+
+## 标准流程（6步）
+
+1. 阅读文章并提炼核心框架  
+2. 规划分镜（每图只讲一件事）  
+3. 编写逐帧 Prompt（统一风格）  
+4. 串行调用 API（每帧间隔 5-6 秒）  
+5. 解析 URL 下载图片  
+6. 按序发送并附图注  
+
+## Prompt 规则
+
+- 固定风格：职场漫画 / comic style
+- 单格漫画优先
+- 场景简洁 + 信息清晰
+- 关键文字可嵌入图中
+- 明确情绪语气（喜剧、反讽、温情）
+
+## 调用示例
+
+```bash
+curl -s -X POST "https://api.jiekou.ai/v3/nano-banana-pro-light-t2i" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_JIEKOU_API_KEY" \
+  -d '{"prompt":"职场漫画风格，单格漫画，简洁有力","size":"16x9","quality":"2k","n":1,"response_format":"url"}' \
+  -o ./outputs/comic/scene_1.json
+```
+
+## 下载示例
+
+```bash
+cd ./outputs/comic
+for i in 1 2 3 4 5; do
+  url=$(python3 -c "import sys,json;print(json.load(open(f'scene_{i}.json'))['data'][0]['url'])")
+  curl -s "$url" -o "scene_${i}.png"
+  sleep 2
+done
+```
+
+## 输出结构
+
+```text
+outputs/
+└── comic/
+    ├── scene_1.png
+    ├── scene_2.png
+    ├── scene_3.png
+    ├── scene_1.json
+    └── ...
+```
+
+## 常见问题
+
+- 图太抽象：Prompt 里明确写画面文字与动作。
+- 风格不统一：每帧使用同一风格前缀。
+- 调用失败：检查 Key、额度、`size=16x9`。
+
