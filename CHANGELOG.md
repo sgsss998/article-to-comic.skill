@@ -1,9 +1,13 @@
 # Changelog
 
+## v0.3.1 - 2026-04-23
+
+- `examples/SOURCES.md`：原文出处改为微信公众号**官方链接**，不再写本地知识库路径。
+
 ## v0.3.0 - 2026-04-23
 
 - 新增 `examples/`：三篇「AI干货家老明」往期文章节选 + 真实调用图像 API 生成的漫画，**左右对比 PNG**。
-- 新增 `examples/SOURCES.md` 记录原文知识库路径；新增 `scripts/build_article_comic_examples.py` 供复现。
+- 新增 `examples/SOURCES.md` 记录原文出处索引；新增 `scripts/build_article_comic_examples.py` 供复现。
 - README 增加「实战示例」区块与 raw 图外链。
 
 ## v0.1 - 2026-04-22
