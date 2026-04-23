@@ -9,8 +9,13 @@
 
 ## 🆕 版本更新（请先看）
 
-- 当前建议版本：`v0.5.1`
+- 当前建议版本：`v0.5.2`
 - 完整迭代记录：`CHANGELOG.md`
+
+**v0.5.2 更新重点：**
+
+- README 新增「SOP 合规清单」逐条打钩，便于外部快速核验示例是否严格按流程执行。
+- 隐私加固：移除个人微信与二维码展示，公开版仅保留 GitHub Issue 联系方式。
 
 **v0.5.1 更新重点：**
 
@@ -100,6 +105,22 @@
 ![例四-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_4.png)
 ![例四-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_5.png)
 ![例四-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_6.png)
+
+---
+
+## ✅ SOP 合规清单（本次示例）
+
+- [x] **Step 1 阅读提炼**：四篇文章均先拆核心论点（见分镜主题设计）
+- [x] **Step 2 规划分镜**：每篇固定 6 帧，每帧只讲一件事
+- [x] **Step 3 逐帧 Prompt**：统一“职场漫画风格 + 单格漫画 + 中文清晰”
+- [x] **Step 4 串行调用**：严格串行，帧间隔 5-6 秒
+- [x] **Step 5 解析下载**：每帧均保留 `scene_*.json` 与 `scene_*.png`
+- [x] **Step 6 顺序交付**：README 与公众号文章均按帧序展示
+
+**证据目录：**
+- 分镜结果：`outputs/comic/<article>/scene_*.png`
+- 接口响应：`outputs/comic/<article>/scene_*.json`
+- 严格执行脚本：`scripts/build_multi_storyboards_strict.py`
 
 ---
 
@@ -212,11 +233,8 @@ A: 全部帧统一使用同一风格前缀与镜头语言。
 
 ---
 
-## 联系作者
+## 联系方式
 
-微信号：`soplaoming`
-
-| 微信二维码 | 收款码 |
-|---|---|
-| ![微信二维码](https://raw.githubusercontent.com/sgsss998/baoxiao.skill/master/wechat-qrcode.jpg) | ![收款码](https://raw.githubusercontent.com/sgsss998/baoxiao.skill/master/wechat-pay-qrcode.jpg) |
+出于公开仓库隐私保护，本仓库不展示个人微信/手机号。  
+如需沟通，请通过 GitHub Issue 联系。
 

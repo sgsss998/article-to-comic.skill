@@ -3,7 +3,7 @@
 import json, os, time, subprocess, urllib.request
 from pathlib import Path
 
-ROOT = Path('/Volumes/T7/Super_Knowledge_Base/AI分身专用工作区/workflow.skill')
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'examples' / 'storyboards'
 
 ARTICLES = {
@@ -58,13 +58,10 @@ ARTICLES = {
 }
 
 def load_key():
-    if os.environ.get('JIEKOU_API_KEY'):
-        return os.environ['JIEKOU_API_KEY'].strip()
-    md = Path('/Volumes/T7/Super_Knowledge_Base/CLAUDE.md')
-    for line in md.read_text(encoding='utf-8').splitlines():
-        if 'API Key:' in line and 'sk_' in line:
-            return line.split('`')[1].strip()
-    raise RuntimeError('No API key found')
+    key = os.environ.get('JIEKOU_API_KEY', '').strip()
+    if key:
+        return key
+    raise RuntimeError('Missing JIEKOU_API_KEY environment variable')
 
 KEY = load_key()
 URL = 'https://api.jiekou.ai/v3/nano-banana-pro-light-t2i'

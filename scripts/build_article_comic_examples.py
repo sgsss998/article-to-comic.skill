@@ -25,12 +25,7 @@ def load_api_key() -> str:
     k = os.environ.get("JIEKOU_API_KEY", "").strip()
     if k:
         return k
-    claude = Path("/Volumes/T7/Super_Knowledge_Base/CLAUDE.md")
-    if claude.exists():
-        for line in claude.read_text(encoding="utf-8").splitlines():
-            if "API Key:" in line and "sk_" in line:
-                return line.split("`")[1].strip()
-    raise SystemExit("Set JIEKOU_API_KEY or add key path in script")
+    raise SystemExit("Set JIEKOU_API_KEY")
 
 
 def call_t2i(prompt: str, out_json: Path) -> str:
