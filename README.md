@@ -9,8 +9,13 @@
 
 ## 🆕 版本更新（请先看）
 
-- 当前建议版本：`v0.4.0`
+- 当前建议版本：`v0.5.0`
 - 完整迭代记录：`CHANGELOG.md`
+
+**v0.5.0 更新重点：**
+
+- 四篇文章全部升级为**深度分镜**：每篇 6 张连续漫画，共 24 张。
+- README 与公众号文章同步从“单图示例”升级为“多图完整概括”。
 
 **v0.4.0 更新重点：**
 
@@ -50,27 +55,47 @@
 
 ---
 
-## 📸 实战示例：四篇往期文章 → 漫画对比
+## 📸 实战示例：四篇文章深度分镜（每篇6张）
 
-以下为 **AI干货家老明** 微信公众号已发文章的节选（左栏），右侧为使用本 skill 思路编写的 Prompt、调用 **图像生成 API**（`nano-banana-pro-light-t2i`）得到的 **单格示意漫画**。用于展示「长文观点如何压成一图」，非逐句转写全文。
+以下示例按“原文节选 -> 分镜拆解 -> 漫画生成”流程执行，不再只用1张图粗略概括。每篇均提供 6 张连续分镜，尽量完整覆盖论点。
 
-> 四篇原文**官方链接**见 [`examples/SOURCES.md`](./examples/SOURCES.md)。
+> 原文官方链接见 [`examples/SOURCES.md`](./examples/SOURCES.md)。
 
 ### 例一：《为什么我们需要建立 AI 记忆库》
-
-![例一 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-01-ai-memory-library-compare.png)
+![例一-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-01-ai-memory-library-compare.png)
+![例一-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-01.png)
+![例一-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-02.png)
+![例一-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-03.png)
+![例一-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-04.png)
+![例一-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-05.png)
+![例一-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-06.png)
 
 ### 例二：《Openclaw 小龙虾：embedding 放本地》
-
-![例二 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-02-openclaw-embedding-compare.png)
+![例二-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-02-openclaw-embedding-compare.png)
+![例二-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-01.png)
+![例二-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-02.png)
+![例二-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-03.png)
+![例二-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-04.png)
+![例二-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-05.png)
+![例二-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-06.png)
 
 ### 例三：《Cursor 全局 Rule — RIPER-5 五模式》
-
-![例三 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-03-cursor-riper5-compare.png)
+![例三-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-03-cursor-riper5-compare.png)
+![例三-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-01.png)
+![例三-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-02.png)
+![例三-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-03.png)
+![例三-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-04.png)
+![例三-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-05.png)
+![例三-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-06.png)
 
 ### 例四：《因为GPT-image-2，整个互联网都变成了巨大的黑暗森林》
-
-![例四 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-04-khazix-dark-forest-compare.png)
+![例四-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-04-khazix-dark-forest-compare.png)
+![例四-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-01.png)
+![例四-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-02.png)
+![例四-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-03.png)
+![例四-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-04.png)
+![例四-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-05.png)
+![例四-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-06.png)
 
 ---
 
