@@ -15,7 +15,7 @@
 **v0.5.2 更新重点：**
 
 - README 新增「SOP 合规清单」逐条打钩，便于外部快速核验示例是否严格按流程执行。
-- 隐私加固：移除个人微信与二维码展示，公开版仅保留 GitHub Issue 联系方式。
+- 隐私加固：移除本地路径与私钥回退逻辑，保留对外宣传所需的公开联系方式。
 
 **v0.5.1 更新重点：**
 
@@ -235,6 +235,9 @@ A: 全部帧统一使用同一风格前缀与镜头语言。
 
 ## 联系方式
 
-出于公开仓库隐私保护，本仓库不展示个人微信/手机号。  
-如需沟通，请通过 GitHub Issue 联系。
+微信号：`soplaoming`
+
+| 微信二维码 | 收款码 |
+|---|---|
+| ![微信二维码](https://raw.githubusercontent.com/sgsss998/baoxiao.skill/master/wechat-qrcode.jpg) | ![收款码](https://raw.githubusercontent.com/sgsss998/baoxiao.skill/master/wechat-pay-qrcode.jpg) |
 
