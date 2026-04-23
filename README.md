@@ -3,20 +3,20 @@
 > Skill 文件名：`连环漫画.skill`（复制到 Agent / OpenClaw 的 skills 目录即可）  
 > 将长文章转成连环漫画风格图片，自动完成分镜、Prompt、批量生成与交付。
 
-![连环漫画.skill 封面](./assets/chikawa-cover-v2.png)
+![连环漫画.skill 封面](./assets/chikawa-cover-v1.png)
 
 ---
 
 ## 🆕 版本更新（请先看）
 
-- 当前建议版本：`v0.1`
+- 当前建议版本：`v0.2`
 - 完整迭代记录：`CHANGELOG.md`
 
-**v0.1 更新重点：**
+**v0.2 更新重点：**
 
-- 基于原始 SOP 完成公开版脱敏：移除个人路径、明文密钥和私有信息。
+- 封面首张叠加水印「AI干货家老明」；候选图二仅保留「API」等泛称画面。
+- README 与 skill 中 Endpoint/Key 统一为占位符，便于接入任意兼容接口。
 - 固化 6 步标准流程：阅读拆解 -> 分镜规划 -> Prompt 编写 -> API 调用 -> 下载 -> 交付。
-- 增加跨环境占位符写法：API Key、输出目录、文件命名均可复用。
 
 ---
 
@@ -26,7 +26,7 @@
 
 - 提炼核心观点并规划分镜
 - 为每一帧生成可执行 Prompt
-- 调用 jiekou.ai 图像接口批量生成图片
+- 调用你配置的**图像生成 API**批量出图
 - 下载整理为统一目录结构
 - 按顺序发送并附图注说明
 
@@ -34,9 +34,9 @@
 
 ## 📋 API 配置（公开版占位）
 
-- **工具**：`jiekou.ai`（nano-banana-pro-light-t2i）
-- **接口**：`POST https://api.jiekou.ai/v3/nano-banana-pro-light-t2i`
-- **鉴权**：`Authorization: Bearer YOUR_JIEKOU_API_KEY`
+- **工具**：任意兼容 `nano-banana-pro-light-t2i` 的**图像生成 API**（把 Endpoint 换成你自己的服务商地址即可）
+- **接口**：`POST {YOUR_IMAGE_ENDPOINT}/v3/nano-banana-pro-light-t2i`
+- **鉴权**：`Authorization: Bearer YOUR_IMAGE_API_KEY`
 - **推荐尺寸**：`16x9`
 - **输出目录**：`./outputs/comic/`
 
@@ -87,9 +87,9 @@ outputs/
 ## ⚡ 标准调用示例
 
 ```bash
-curl -s -X POST "https://api.jiekou.ai/v3/nano-banana-pro-light-t2i" \
+curl -s -X POST "${YOUR_IMAGE_ENDPOINT}/v3/nano-banana-pro-light-t2i" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JIEKOU_API_KEY" \
+  -H "Authorization: Bearer YOUR_IMAGE_API_KEY" \
   -d '{"prompt":"职场漫画风格，单格漫画，简洁有力","size":"16x9","quality":"2k","n":1,"response_format":"url"}' \
   -o ./outputs/comic/scene_1.json
 ```
@@ -126,7 +126,7 @@ A: 全部帧统一使用同一风格前缀与镜头语言。
 
 请在 `连环漫画.skill` 中替换以下占位符：
 
-- `YOUR_JIEKOU_API_KEY`
+- `YOUR_IMAGE_API_KEY` / `YOUR_IMAGE_ENDPOINT`
 - `./outputs/comic/`
 - 你的默认风格模板（如职场漫画/黑白速写/美式漫画）
 

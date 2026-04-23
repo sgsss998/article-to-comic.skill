@@ -6,8 +6,8 @@
 
 ## API 配置（占位符）
 
-- Endpoint: `https://api.jiekou.ai/v3/nano-banana-pro-light-t2i`
-- Auth: `Bearer YOUR_JIEKOU_API_KEY`
+- Endpoint: `{YOUR_IMAGE_ENDPOINT}/v3/nano-banana-pro-light-t2i`
+- Auth: `Bearer YOUR_IMAGE_API_KEY`
 - Size: `16x9`
 - Output: `./outputs/comic/`
 
@@ -31,9 +31,9 @@
 ## 调用示例
 
 ```bash
-curl -s -X POST "https://api.jiekou.ai/v3/nano-banana-pro-light-t2i" \
+curl -s -X POST "${YOUR_IMAGE_ENDPOINT}/v3/nano-banana-pro-light-t2i" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JIEKOU_API_KEY" \
+  -H "Authorization: Bearer YOUR_IMAGE_API_KEY" \
   -d '{"prompt":"职场漫画风格，单格漫画，简洁有力","size":"16x9","quality":"2k","n":1,"response_format":"url"}' \
   -o ./outputs/comic/scene_1.json
 ```
