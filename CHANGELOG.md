@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.4.0 - 2026-04-23
+
+- 新增第4个微信文章示例（卡兹克黑暗森林）并生成对比图：`example-04-khazix-dark-forest-compare.png`。
+- README 与公众号文章同步新增第4个示例。
+
 ## v0.3.1 - 2026-04-23
 
 - `examples/SOURCES.md`：原文出处改为微信公众号**官方链接**，不再写本地知识库路径。

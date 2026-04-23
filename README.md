@@ -9,8 +9,13 @@
 
 ## 🆕 版本更新（请先看）
 
-- 当前建议版本：`v0.3.1`
+- 当前建议版本：`v0.4.0`
 - 完整迭代记录：`CHANGELOG.md`
+
+**v0.4.0 更新重点：**
+
+- 新增第 4 个真实示例：卡兹克《因为GPT-image-2，整个互联网都变成了巨大的黑暗森林。》
+- 示例图为「原文摘录 vs 漫画」左右对比图，并加入 README 与公众号排版 HTML。
 
 **v0.3.1 更新重点：**
 
@@ -45,11 +50,11 @@
 
 ---
 
-## 📸 实战示例：三篇往期文章 → 漫画对比
+## 📸 实战示例：四篇往期文章 → 漫画对比
 
 以下为 **AI干货家老明** 微信公众号已发文章的节选（左栏），右侧为使用本 skill 思路编写的 Prompt、调用 **图像生成 API**（`nano-banana-pro-light-t2i`）得到的 **单格示意漫画**。用于展示「长文观点如何压成一图」，非逐句转写全文。
 
-> 三篇原文**官方链接**见 [`examples/SOURCES.md`](./examples/SOURCES.md)。
+> 四篇原文**官方链接**见 [`examples/SOURCES.md`](./examples/SOURCES.md)。
 
 ### 例一：《为什么我们需要建立 AI 记忆库》
 
@@ -62,6 +67,10 @@
 ### 例三：《Cursor 全局 Rule — RIPER-5 五模式》
 
 ![例三 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-03-cursor-riper5-compare.png)
+
+### 例四：《因为GPT-image-2，整个互联网都变成了巨大的黑暗森林》
+
+![例四 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-04-khazix-dark-forest-compare.png)
 
 ---
 
