@@ -9,8 +9,13 @@
 
 ## 🆕 版本更新（请先看）
 
-- 当前建议版本：`v0.2.1`
+- 当前建议版本：`v0.3.0`
 - 完整迭代记录：`CHANGELOG.md`
+
+**v0.3.0 更新重点：**
+
+- 新增 **3 组真实示例**：选自「AI干货家老明」往期公众号/博客稿节选，经同一套流程调用图像 API 生成单格漫画，并与原文摘录 **左右合成对比图**（见 `examples/`）。
+- 提供生成脚本 `scripts/build_article_comic_examples.py`，可本地复现或改文案/Prompt。
 
 **v0.2.1 更新重点：**
 
@@ -33,6 +38,26 @@
 - 调用你配置的**图像生成 API**批量出图
 - 下载整理为统一目录结构
 - 按顺序发送并附图注说明
+
+---
+
+## 📸 实战示例：三篇往期文章 → 漫画对比
+
+以下为 **AI干货家老明** 知识库中既有稿件的节选（左栏），右侧为使用本 skill 思路编写的 Prompt、调用 **图像生成 API**（`nano-banana-pro-light-t2i`）得到的 **单格示意漫画**。用于展示「长文观点如何压成一图」，非逐句转写全文。
+
+> 完整 Markdown 路径见 [`examples/SOURCES.md`](./examples/SOURCES.md)。
+
+### 例一：《为什么我们需要建立 AI 记忆库》
+
+![例一 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-01-ai-memory-library-compare.png)
+
+### 例二：《Openclaw 小龙虾：embedding 放本地》
+
+![例二 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-02-openclaw-embedding-compare.png)
+
+### 例三：《Cursor 全局 Rule — RIPER-5 五模式》
+
+![例三 原文摘录 vs 漫画](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-03-cursor-riper5-compare.png)
 
 ---
 
