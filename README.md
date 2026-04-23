@@ -9,8 +9,12 @@
 
 ## 🆕 版本更新（请先看）
 
-- 当前建议版本：`v0.5.0`
+- 当前建议版本：`v0.5.1`
 - 完整迭代记录：`CHANGELOG.md`
+
+**v0.5.1 更新重点：**
+
+- 示例分镜链接已切换为严格 SOP 产物目录 `outputs/comic/`（串行调用、5-6 秒间隔、scene_*.json+png 成对输出）。
 
 **v0.5.0 更新重点：**
 
@@ -63,39 +67,39 @@
 
 ### 例一：《为什么我们需要建立 AI 记忆库》
 ![例一-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-01-ai-memory-library-compare.png)
-![例一-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-01.png)
-![例一-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-02.png)
-![例一-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-03.png)
-![例一-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-04.png)
-![例一-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-05.png)
-![例一-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/ai-memory-library/scene-06.png)
+![例一-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/ai-memory-library/scene_1.png)
+![例一-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/ai-memory-library/scene_2.png)
+![例一-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/ai-memory-library/scene_3.png)
+![例一-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/ai-memory-library/scene_4.png)
+![例一-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/ai-memory-library/scene_5.png)
+![例一-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/ai-memory-library/scene_6.png)
 
 ### 例二：《Openclaw 小龙虾：embedding 放本地》
 ![例二-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-02-openclaw-embedding-compare.png)
-![例二-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-01.png)
-![例二-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-02.png)
-![例二-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-03.png)
-![例二-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-04.png)
-![例二-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-05.png)
-![例二-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/openclaw-local-embedding/scene-06.png)
+![例二-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/openclaw-local-embedding/scene_1.png)
+![例二-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/openclaw-local-embedding/scene_2.png)
+![例二-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/openclaw-local-embedding/scene_3.png)
+![例二-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/openclaw-local-embedding/scene_4.png)
+![例二-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/openclaw-local-embedding/scene_5.png)
+![例二-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/openclaw-local-embedding/scene_6.png)
 
 ### 例三：《Cursor 全局 Rule — RIPER-5 五模式》
 ![例三-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-03-cursor-riper5-compare.png)
-![例三-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-01.png)
-![例三-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-02.png)
-![例三-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-03.png)
-![例三-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-04.png)
-![例三-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-05.png)
-![例三-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/cursor-riper5/scene-06.png)
+![例三-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/cursor-riper5/scene_1.png)
+![例三-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/cursor-riper5/scene_2.png)
+![例三-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/cursor-riper5/scene_3.png)
+![例三-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/cursor-riper5/scene_4.png)
+![例三-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/cursor-riper5/scene_5.png)
+![例三-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/cursor-riper5/scene_6.png)
 
 ### 例四：《因为GPT-image-2，整个互联网都变成了巨大的黑暗森林》
 ![例四-对比图](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/example-04-khazix-dark-forest-compare.png)
-![例四-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-01.png)
-![例四-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-02.png)
-![例四-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-03.png)
-![例四-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-04.png)
-![例四-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-05.png)
-![例四-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/examples/storyboards/khazix-dark-forest/scene-06.png)
+![例四-分镜1](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_1.png)
+![例四-分镜2](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_2.png)
+![例四-分镜3](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_3.png)
+![例四-分镜4](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_4.png)
+![例四-分镜5](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_5.png)
+![例四-分镜6](https://raw.githubusercontent.com/sgsss998/article-to-comic.skill/master/outputs/comic/khazix-dark-forest/scene_6.png)
 
 ---
 

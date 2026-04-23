@@ -1,0 +1,9 @@
+{
+  "createTime": "2026-04-23T15:51:40.786460Z",
+  "data": [
+    {
+      "revised_prompt": "",
+      "url": "https://faas-output-image-1329507684.cos.ap-singapore.myqcloud.com/prod/fusion-dae3270d-3b04-47bc-a5b1-b386e93ee9c2?q-sign-algorithm=sha1&q-ak=IKIDQZPu70YleCPIq3vSedHadLikRngESMwC&q-sign-time=1776959542%3B1777132342&q-key-time=1776959542%3B1777132342&q-header-list=host&q-url-param-list=&q-signature=f35b00bb270f7aa067cf9a9ace788dcd0b8f7d0f"
+    }
+  ]
+}
