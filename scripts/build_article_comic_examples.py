@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Generate 3 article→comic examples with before/after comparison PNGs for README / 公众号."""
+"""Generate 3 article→comic examples with before/after comparison PNGs for README / 公众号.
+
+原文官方链接见 ../examples/SOURCES.md（微信 mp 链接）；节选文案与仓库内历史生成保持一致。
+"""
 from __future__ import annotations
 
 import json
